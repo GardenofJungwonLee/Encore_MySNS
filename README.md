@@ -1,12 +1,12 @@
 # Encore_MySNS
 > encore 나만의 SNS 만들기 예제 및 교안
 
-## 폴더 구조
+## 폴더 구조 (C:/playdata/)
 - **00.solution** : 실제 최종 산출물 (팀 또는 개인)
 - **01.html / 02.css / 03.javascript / 04.linux** : 예제, 실습, 솔루션 구현 등 (하단에 상세 설명)
 - **99.material** : 수업 교안 PDF
 
-## 실습 순서
+## 실습 순서 (step by step)
 - **step01_practice**
   - 강사와 함께 진행하는 예제
   - *TDD*(실패-성공-리팩토링)로 함께 코드를 작성해보며 개념과 기능 이해
@@ -20,5 +20,6 @@
 
 ## 차후 일정
 - **1/6** : 시강 진행
+- 現 repository(*Encore_MySNS*)에 예제 및 교안 업데이트 (~1/10)
 - **1/10** : 전체 교안 제출
 - *TBD*
