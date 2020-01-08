@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Align</title>
+	<style>
+		div.line {
+            height: 100px;
+            background-color: khaki;
+            line-height: 100px;
+            vertical-align: middle;
+		}
+        div.table {
+            height: 100px;
+            background-color: lavender;
+            display: table;
+        }
+        div.table > div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+	</style>
+</head>
+<body>
+    <div class="line">
+        line-height를 사용해서 수직 정렬
+    </div>
+    <div class="table">
+        <div>
+            table 속성을 사용해 수직 정렬
+        </div>
+
+</html>
