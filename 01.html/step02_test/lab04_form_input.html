@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab04_form_input.html</title>
+</head>
+<body>
+    <!-- 회원가입 페이지 -->
+    <h1>1. 회원가입 페이지</h1>
+    <form action="">
+        <div style="width: 250px; border: 1px solid;">
+            <!-- 제목 -->
+            <div style="text-align: center;">NAVER</div>
+            
+            <!-- 아이디 -->
+            <div><b>아이디</b></div>
+                <input type="text" name="id" id="" placeholder="나만의 아이디" style="width: 97%;">
+            
+            <!-- 비밀번호 -->
+            <div><b>비밀번호</b></div>
+              <input type="password" name="password" id="" style="width: 97%;">
+            
+            <!-- 이름 -->
+            <div><b>이름</b></div>
+                <input type="text" name="name" placeholder="너의 이름은" id="" style="width: 97%;">
+            
+            <!-- 성별 -->
+            <div><b>성별</b></div>
+                <input type="radio" name="gender" id="">M
+                <input type="radio" name="gender" id="">W
+                <input type="radio" name="gender" id="">N
+            <!-- 취미 -->
+            <div><b>취미</b></div>
+                <input type="checkbox" name="hobby" id="">운동
+                <input type="checkbox" name="hobby" id="">잠
+                <input type="checkbox" name="hobby" id="">또 잠
+            <!-- 가장 좋아하는 색 -->
+            <div><b>가장 좋아하는 색</b></div>
+            <select name="" id="">
+                <option value="" selected>White</option>
+                <option value="">Black</option>
+                <option value="">Skyblue</option>
+            </select>
+            
+            <br>
+            
+            <div style="text-align: center;">
+                <input type="submit" value="가입">
+            </div>
+        </div>
+    </form>
+    
+    <br><hr><br>
+    
+    <!-- 검색창 -->
+    <h1>2. 검색창 만들기</h1>
+    
+    <!-- 네이버 -->
+    <h2>2-1. 네이버 검색창 만들기</h2>
+    <form action="https://search.naver.com/search.naver?" method="GET" target="_blank"> 
+        <span>NAVER</span> <input type="text" name="query" style="border-color: springgreen;">
+        <input type="submit" value="search">
+    </form>
+    
+    <br>
+    
+    <!-- 구글 -->
+    <h2>2-2. 구글 검색창 만들기</h2>
+    <form action="https://www.google.com/search?" method="GET" target="blank"> 
+        GOOGLE <input type="text" name="q">
+        <input type="submit" value="search">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab03_list_table.html</title>
+</head>
+<body>
+    <h1>리스트 & 테이블</h1>
+    <h2>1. 리스트 테이블 활용하여 만들기</h2>
+    <table border="1px solid black" style="text-align: center;">
+        <caption>꿈은 이루어진다 :)</caption>
+        <thead>
+            <tr>
+                <th>하고픈 것</th>
+                <th>언제쯤?</th>
+                <th>필요한건?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2020 트래블러</td>
+                <td>언제든지!</td>
+                <td>여유?! 풉</td>
+            </tr>
+            <tr>
+                <td>맛난 햄버거 찾기</td>
+                <td>애니타임!</td>
+                <td>햄버거만을 위한 빈 속</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. 테이블 병합 문제</h2>
+    <table border="1" width="400" height="400">
+        <tr>
+            <td width="100" height="100" rowspan="3"></td>
+            <td width="100" height="100" colspan="2" rowspan="2"></td>
+            <td width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td width="100" height="100" rowspan="2"></td>
+            <td width="100" height="100" rowspan="" colspan="2"></td>
+        </tr>
+        <tr>
+            <td width="100" height="100"></td>
+            <td width="100" height="100"></td>
+            <td width="100" height="100"></td>
+        </tr>        
+    </table>
+</body>
+</html>

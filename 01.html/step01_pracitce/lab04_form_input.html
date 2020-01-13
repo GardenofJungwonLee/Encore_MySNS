@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab04_form_input.html</title>
+</head>
+<body>
+    <h1>form & input 태그</h1>
+    <h2>1. input : text</h2>
+    <form action="">
+        텍스트를 입력하세요 : <br> 
+        <input type="text" name="" id="">        
+    </form>
+    <hr>
+    <h2>2. input : password</h2>
+        <form action="">
+            ID : <br><input type="text" name="userId"><br>
+            PW : <br><input type="password" name="password">
+        </form>
+    <hr>
+    <h2>3. input : radio</h2>
+        <form action="">
+            <input type="radio" name="animal" value="" checked> 라디오 1 <br>
+            <input type="radio" name="animal" value=""> 라디오 2 <br>
+            <input type="radio" name="animal" value=""> 라디오 3 <br>
+            <input type="radio" name="animal" value=""> 라디오 4
+        </form>
+    <hr>
+    <h2>4. input : checkbox</h2>
+        <form action="">
+            <input type="checkbox" name="lecture" value="" checked> 체크박스 1 <br>
+            <input type="checkbox" name="lecture" value=""> 체크박스 2 <br>
+            <input type="checkbox" name="lecture" value=""> 체크박스 3 <br>
+            <input type="checkbox" name="lecture" value="" disabled> 체크박스 4
+        </form>
+    <hr>
+    <h2>5. select</h2>
+        <select name="selection">
+            <option value="" selected> 선택 1
+            <option value=""> 선택 2
+            <option value=""> 선택 3
+            <option value=""> 선택 4
+        </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><hr>
+    <h2>6. button</h2>
+        <button type="button" onclick="alert('버튼을 클릭하셨군요!')">
+            버튼을 눌러주세요
+        </button>
+    <hr>
+    <h2>7. input : submit</h2>
+        <form action="" method="GET">
+            텍스트를 입력하세요 : <br>
+            <input type="text" name="text" placeholder="텍스트를 작성해 주세요"><br>
+            <input type="submit" value="전송" style="margin-top: 5px;">
+        </form> 
+</body>
+</html>
