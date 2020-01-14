@@ -7,48 +7,62 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <h1>JavaScript 조건문</h1>
-    <h2>if</h2>
+    <h1>JavaScript 반복문</h1>
+    <h2>while</h2>
     <script>
-    // 조건을 만족할 때의 실행을 정해줌
-    console.log("[if]")
-    let age = 20; // 본인 나이
-    if (age >= 20) {
-        console.log("당신은 술을 마실 수 있습니다.")
-    }
+        // 특정 조건이 참인 경우에만 계속 반복하는 while
+        console.log("[while]")
+        // while (표현식) {표현식이 참인 동안 반복적으로 실행하고자 하는 실행문}
+        let w = 0;
+        while (w < 9) {
+            w++;
+            document.write(w + "의 제곱은 " + w ** 2);
+            document.write("<br>");
+        }
+        // 탈출할 길이 없어서 무한 루프에 빠짐
+        // while (true) {
+        //     console.log("무한 루프")
+        // }
     </script>
-    <h2>else</h2>
+    <h2>for</h2>
     <script>
-    // 조건을 만족하지 않을 때에 어떤 내용을 실행할지도 작성
-    console.log("[else]")
-    let random = Math.random() // 0 이상 1 미만의 값을 임의로 만들어주는 함수(기능)
-    if (random >= 0.5) {
-        console.log("0.5보다 크거나 같습니다.")
-    } else {
-        console.log("0.5보다 작습니다.")
-    }
+        // 특정 횟수만큼 반복하는 for
+        console.log("[for]")
+        // for (초기식; 표현식; 증감식) {표현식의 결과가 참인 동안 반복적으로 실행하고자 하는 실행문}
+        for(let i = 0; i < 9; i++) {
+            document.write(i + "의 제곱은 " + i ** 2);
+            document.write("<br>")
+        }
     </script>
-    <h2>else if</h2>
-    <script>
-    // 다양한 조건을 지정하는 방법
-    // 위에 있는 부분이 먼저 검사되므로 if-else if 조건문 간의 순서를 잘 생각해야함
-    console.log("[else if]")
-    let num = prompt("몇 살이세요?") // 값을 입력 받을 수 있는 창을 띄우는 함수(기능)
-    if (!parseInt(num)) {
-        // prompt는 입력 받은 값을 모두 문자열로 인식하기 때문에 숫자로 바꿔줘야 함
-        // parseInt라는 함수를 사용하면 숫자로 된 문자열을 숫자로 바꿔줄 수 있음
-        alert("숫자를 입력해주세요!")
-    } else if (num >= 30) {
-        alert("30대 이상이시네요.")
-    } else if (num >= 27) {
-        alert("20대 후반이시네요.")
-    } else if (num >= 23) {
-        alert("20대 중반이시네요.")
-    } else if (num >= 20) {
-        alert("20대 초반이시네요.")
-    } else {
-        alert("10대 이하시네요.")
-    }
+
+    <script>    
+        // 간단한 문제
+        // 월 이율 10%인 상품에 100만원을 투자했을 때 200만원이 되려면 몇 달이 필요한가?
+        // while
+        let money = 100, month = 0;
+        while(money < 200) {
+            money *= 1.1;
+            month++;
+        }
+        console.log("while", month);
+        // for
+        for(month = 0, money = 100; money < 200; month++) {
+            money *= 1.1;
+        }
+        console.log("for", month);
+        // 월 이율 5%인 상품에 150만원을 투자했을 때 2년 후 얼마인가?
+        // while
+        money = 150, month = 0;
+        while(month < 24) {
+            money *= 1.05;
+            month++;
+        }
+        console.log("while", money);
+        // for 
+        for(money = 150, month = 0; month < 24; month++) {
+            money *= 1.05;
+        }
+        console.log("for", money);
     </script>
 </body>
 </html>
