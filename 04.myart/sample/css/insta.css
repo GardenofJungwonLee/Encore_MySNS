@@ -1,9 +1,13 @@
 /* 인스타그램 폰트 */
 @font-face {
-    font-family: 'Billabong';
+    font-family: 'Richard Murray';
     font-style: normal;
     font-weight: normal;
-    src: local('Billabong'), url('../font/Billabong.woff') format('woff');
+    src: url('../font/RichardMurray.woff') format('woff');
+}
+#logo h1{
+    font-family: 'Richard Murray';
+    font-size: 42px;
 }
 /* 레이아웃 */
 html {
