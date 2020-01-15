@@ -46,13 +46,13 @@ section {
     margin: 19.25px auto; */
 }
 .center {
-    display: table;
+    /* display: table;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: relative; */
 }
 .bar {
-    height: 77px
+    /* height: 77px */
 }
 .umg {
     /* margin-top: 12px; */
