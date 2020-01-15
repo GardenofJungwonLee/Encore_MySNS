@@ -6,7 +6,7 @@ function nextPage(id, data) {
         alert("빈 칸을 채워주세요!")
         return;
     } else {
-        if(!isNaN(data.value)) {
+        if(id != "p1") {
             score += Number(data.value);
             console.log(score)
         } else {

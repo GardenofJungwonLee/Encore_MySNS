@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>배열의 생성</h2>
+    <script>    
+        // 배열의 생성 : [요소1, 요소2, ...]
+        document.write(["사과", "배", "오렌지"])
+    </script>
+    <h2>배열의 조회</h2>
+    <script>
+        // 배열의 조회 : 배열명[인덱스]. 인덱스는 우리가 세는 숫자 - 1 (0부터)
+        const arr = ["서울", "대전", "대구", "부산"];
+        document.write(arr[0] + "<br>")
+        // 배열의 길이 : 배열명.length 배열의 길이 (최대 인덱스+1)
+        document.write(arr.length + "<br>")
+        // 마지막 요소 조회
+        document.write(arr[arr.length - 1] + "<br>")
+    </script>
+    <h2>배열의 요소 추가 및 삭제</h2>
+    <script>
+        const arr2 = [1, 2, 3, 4, 5];
+        arr2.push(6); // push(요소) 메소드 : 맨 뒤에 요소 추가
+        document.write(arr2 + "<br>")
+        arr2.pop(); // pop() 메소드 : 맨 뒤에 요소 삭제(반환)
+        document.write(arr2 + "<br>")
+        arr2.shift(); // shift() 메소드 : 맨 앞에 요소 삭제(반환)
+        document.write(arr2 + "<br>")
+        arr2.unshift(7); // unshift(요소) 메소드 : 맨 앞에 요소 추가
+        document.write(arr2 + "<br>")
+    </script>
+    <h2>배열의 요소 반복</h2>
+    <script>
+        const arr3 = ["고구려", "백제", "신라"];
+        document.write("<p><b>for를 통한 반복</b></p>");
+        for(let i = 0; i < arr3.length; i++) {
+            document.write(i + arr3[i] + "<br>");
+        }
+        document.write("<p><b>for-of를 통한 반복</b></p>");
+        for(let v of arr3) {
+            document.write(v + "<br>");
+        }
+        document.write("<p><b>forEach를 통한 반복</b></p>");
+        arr3.forEach(function(v) {
+            document.write(v + "<br>");
+        })
+    </script>
+</body>
+</html>

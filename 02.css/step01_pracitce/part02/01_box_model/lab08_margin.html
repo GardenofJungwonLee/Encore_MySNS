@@ -1,27 +1,37 @@
-<style>
-p {
-    background-color: limegreen;
-    font-weight: bold;
-}
-p.individual {
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    margin-left: 80px;
-}
-p.shorthand {
-    margin: 10px 20px 40px 80px;
-}
-</style>
-
-<p class="individual">방향 하나씩 적용</p>
-<p class="shorthand">축약형</p>
-
-<div style="width: 50%;
-    background-color: honeydew; border: 1px solid;">
-    <div style="width: 50%; margin: auto;
-        background-color: khaki; border: 1px dashed;">
-        좌우 가운데 정렬
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <style>
+        p {
+            background-color: limegreen;
+            font-weight: bold;
+        }
+        p.individual {
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 80px;
+        }
+        p.shorthand {
+            margin: 10px 20px 40px 80px;
+        }
+        </style>
+</head>
+<body>
+    <h1>margin</h1>
+    <p class="individual">방향 하나씩 적용</p>
+    <p class="shorthand">축약형</p>
+    
+    <div style="width: 50%;
+        background-color: honeydew; border: 1px solid;">
+        <div style="width: 50%; margin: auto;
+            background-color: khaki; border: 1px dashed;">
+            좌우 가운데 정렬
+        </div>
     </div>
-</div>
-
+</body>
+</html>
